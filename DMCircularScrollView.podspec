@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'DMCircularScrollView'
   s.version      = '1.0.0'
   s.summary      = 'Infinite/Circular Scrolling Implementation for UIScrollView.'
-  s.homepage     = 'https://github.com/malcommac/DMCircularScrollView'
+  s.homepage     = 'https://github.com/imjerrybao/DMCircularScrollView'
   s.license      = 'MIT'
   s.author       = { 'Daniele Margutti' => 'http://www.danielemargutti.com' }            
   s.source       = { :git => 'https://github.com/imjerrybao/DMCircularScrollView.git' }
