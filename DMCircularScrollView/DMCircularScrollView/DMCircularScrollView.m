@@ -196,7 +196,7 @@
     }
 }
 
-- (void)scrollViewDidEndZooming:(UIScrollView *)sv withView:(UIView *)view atScale:(double)scale
+- (void)scrollViewDidEndZooming:(UIScrollView *)sv withView:(UIView *)view atScale:(CGFloat)scale
 {
     if (self.scrollViewDelegate && [self.scrollViewDelegate respondsToSelector:@selector(scrollViewDidEndZooming:withView:atScale:)])
     {
@@ -341,7 +341,7 @@
      [viewsList enumerateObjectsUsingBlock:^(UIView* obj, NSUInteger idx, BOOL *stop) {
      [buff appendFormat:@"%d%@,",obj.tag,([obj isKindOfClass:[UIImageView class]] ? @"*":@"")];
      }];
-     NSLog(@"%@",buff);
+     NSLog(@"%@",buff);[self.scrollViewDelegate scrollViewDidEndZooming:sv withView:view atScale:scale];
      */
     return viewsList;
 }
